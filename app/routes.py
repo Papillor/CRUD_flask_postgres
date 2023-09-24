@@ -40,10 +40,10 @@ def edit(book_id):
 
     return render_template('edit.html', book=book)
 
-@app.route('/delete/<int:book_id>/', methods=['POST'])
+@app.route('/delete/<int:book_id>/', methods=['GET'])
 def delete(book_id):
-    cur.execute('DELETE FROM books WHERE id = %s', (book_id,))
-    conn.commit()
-    return redirect(url_for('index'))
-    
+    if request.method == 'GET':
+        cur.execute('DELETE FROM books WHERE id = %s', (book_id,))
+        conn.commit()
+        return redirect(url_for('index'))
 
