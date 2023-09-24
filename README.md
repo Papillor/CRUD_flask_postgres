@@ -60,4 +60,3 @@ flask run
 
 - https://flask.palletsprojects.com/en/2.3.x/
 - https://pypi.org/project/psycopg2/
-- 
