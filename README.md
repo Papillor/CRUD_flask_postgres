@@ -1,4 +1,4 @@
-# CRUD - Beginner
+# CRUD
 
 ## Setting up
 
