@@ -49,10 +49,10 @@ sudo apt-get install libpq-dev
 
 ## Launch the project
 ```bash
-export POSTGRES_USER='youruser'
-export POSTGRES_PASSWORD='yourpassword'
+export FLASK_APP=app
+export FLASK_DEBUG=true
 
-python3 run.py
+flask run
 ```
 
 ## Documentation
