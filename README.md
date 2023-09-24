@@ -48,6 +48,7 @@ sudo apt-get install libpq-dev
 ```
 
 ## Launch the project
+
 ```bash
 export FLASK_APP=app
 export FLASK_DEBUG=true
@@ -59,3 +60,4 @@ flask run
 
 - https://flask.palletsprojects.com/en/2.3.x/
 - https://pypi.org/project/psycopg2/
+- 
