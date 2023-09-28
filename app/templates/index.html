@@ -9,7 +9,7 @@
             <p class='review'>{{ book[4] }}</p>
             <i><p>Added {{ book[5] }}</p></i>
             <button><a href="{{ url_for('edit', book_id=book[0]) }}">Edit</a></button>
-            <button><a href="{{ url_for('delete', book_id=book[0]) }}">Delete</a></button></form>
+            <button><a href="{{ url_for('delete', book_id=book[0]) }}">Delete</a></button>
         </div>
     {% endfor %}
 {% endblock %}
